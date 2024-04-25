@@ -20,4 +20,17 @@ int main()
     {
         arr[i].showInfo();
     }
+
+    cout << "=============================\n\n";
+    int amount = 0;
+    for (int i = 0; i < N; i++)
+    {
+        if (arr[i].RAM > 10)
+        {
+            arr[i].showInfo();
+            amount++;
+        }
+
+        cout << "Amount: " << amount << endl;
+    }
 }
